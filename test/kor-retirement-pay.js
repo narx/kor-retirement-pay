@@ -13,7 +13,7 @@ describe('퇴직금 테스트', function(){
       연상여금: 1000000, 
       연차수당: 100000, 
       일일통상임금: 0,
-      디버그: true
+      디버그: false
     }
 
     const expected = 393785.58;
@@ -23,4 +23,21 @@ describe('퇴직금 테스트', function(){
     it(`퇴직금 계산결과는 ${actual}원 입니다.`, function(){
         expect(actual).to.equal(expected);
     });
+})
+
+describe('퇴직금소득세 테스트', function(){
+    
+  const param = {
+    입사일: new Date(2017,0, 2), 
+    퇴사일: new Date(2018,4,30), 
+    퇴직금: 10000000
+  }
+
+  const expected = 562440;
+
+  const actual = 퇴직금.get퇴직소득세(param);
+
+  it(`퇴직금소득세 계산결과는 ${actual}원 입니다.`, function(){
+      expect(actual).to.equal(expected);
+  });
 })

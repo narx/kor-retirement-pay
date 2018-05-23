@@ -1,6 +1,6 @@
 {
   "name": "kor-retirement-pay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -15,5 +15,9 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/narx/kor-retirement-pay.git"
   }
 }

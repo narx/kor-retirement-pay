@@ -33,9 +33,15 @@ export class 일일평균임금Parameter {
   연차수당: number;
 }
 
+export class 퇴직소득세Parameter {
+  입사일: Date;
+  퇴사일: Date;
+  퇴직금: number;
+}
 export namespace 퇴직금 {
   export function get퇴직금(param: 퇴직금Parameter): number;
   export function get재직일수(param: 재직일수Parameter): number;
   export function get최근3개월임금(param: 최근3개월임금Parameter): Array<최근임금Result>;
   export function get일일평균임금(param: 일일평균임금Parameter): number;
+  export function get퇴직소득세(param: 퇴직소득세Parameter): number;
 }
