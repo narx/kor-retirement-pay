@@ -33,6 +33,8 @@ describe('퇴직금소득세 테스트', function(){
     퇴직금: 10000000
   }
 
+
+
   const expected = 562440;
 
   const actual = 퇴직금.get퇴직소득세(param);
